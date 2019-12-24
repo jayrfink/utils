@@ -1,0 +1,27 @@
+
+Changelog for lscpu
+
+1.1 to 1.2
+	* Added a larger header with the OS Release, Type and Version
+1.2 to 1.3
+	* Added kernel.h and version check to support 2.3.X kernel
+	* Nuked the use of kernel.h and went with using the osrelease file
+1.3 to 1.4
+	* Retoolded the coding style to be a little lighter
+	* Changed the somewhat arbitrary line lengths to Linux's
+	  line limit defined by posix2 limits file
+1.4 to 1.4
+	* Changed the string max BACK to a hard coded value
+          many dists do not have the required libs
+1.5 to 1.6
+	* built the standard GNU package stuff
+	* wrote a (light) man page
+	* changed file handles to an array vs. defines
+1.6 to 1.7
+	* switched to stdlib for errors
+	* cleaned up the Makefile some more
+1.8 to 1.9
+	* Short if's
+	* Updated contact info etc.
+
+

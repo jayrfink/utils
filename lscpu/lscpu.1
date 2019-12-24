@@ -1,0 +1,41 @@
+.TH LSCPU 
+.SH NAME
+lscpu \-report generic information about the system processor and RTC
+.SH SYNOPSIS
+.B lscpu
+
+.SH DESCRIPTION
+The
+.B lscpu
+command reports back the following information about the system processor and RTC:
+
+.B type
+The generic type and model name
+
+.B speeds
+Both in MHz and BogoMips
+
+.B cache
+The size of the processor cache
+
+.B current time
+The rtc current value
+
+.B period freq
+The rtc periodic frequency.
+
+.B date
+The rtc current date
+
+.B battery
+The current status of the RTC battery.
+
+
+.SH NOTES
+.I /proc
+filesystem must be mounted for the
+.B lscpu
+command to work.
+
+.SH AUTHOR
+Jason R Fink <jay.fink@gmail.com>

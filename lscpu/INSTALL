@@ -1,0 +1,18 @@
+Install File for lscpu
+
+There are several install methods, you can use the standard:
+
+	./configure
+	make
+
+	su to root and:
+
+	make install
+
+or if you are feeling lucky, skip the './configure' part and shoot straight to 
+	make; make install
+
+alternately you may keep the binary in a local directory, just be advised that
+the uninstall rule will not work properly.
+
+

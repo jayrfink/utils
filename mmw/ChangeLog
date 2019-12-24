@@ -1,0 +1,63 @@
+
+ChangeLog for mmw
+
+1.9 to 2.0
+    Updated manual page
+    Added a subdivision of 1/10 GB (not apparent to user) so ranges of 1-10
+        GB still print in MB units.
+    Changed usage over to an atomic printf
+    Converted exits and returns to posix macro
+    Fixed if no /proc/meminfo to exit with failure (before it did nothing)
+    Moved the sleep interval to end of reading /proc/meminfo to mimic how
+        other similar utils work
+    Combined poll and sleep check into one shot deal
+
+1.8 to 1.9
+    Added human readable format flag.
+    Made optargs required for interval and polls to cut down on confusion.
+    Ripped out useless helper_*() code.
+    Rewrote the options parser to use getoptlong.
+    Added swap option
+    All arguments now require an option; although the old format is still
+    supported.
+
+1.7 to 1.8
+    Fixed a bug in the mem_array data set. If a variable does not exist in
+    /proc/meminfo mmw was printing unitialized int data. Created a simple
+    init loop for the structure to preset all data to 0.
+
+1.6 to 1.7
+    Short ifs
+    Yet new contact info again
+
+1.5 to 1.6
+    Cleaned up some types
+    New contact info
+
+1.4 to 1.5
+    setup helper, usage and error printing to have slightly
+    improved reusability.
+
+    altered several variable storage methods, there were groups
+    of variables that are simply better served as arrays.
+
+    created a single global const for default polls/intervals.
+
+    removed polls/intervals variables from main and directly
+    convert user input into intergers (just a time_saver really).
+
+    found ANOTHER reference to meminfo int he man page - jeez!
+
+    finally, variable field width format, mmw now supports up
+    to 100TB Memory for monitoring, wahoo!
+
+1.3 to 1.4
+    installed GNU packaging
+
+1.2 to 1.3
+    More administrivia, memwathc was still lurking in
+    the man page and lsm file
+
+1.1 to 1.2
+    Administrivia, I had memwatch as the program name
+    in the source - oops

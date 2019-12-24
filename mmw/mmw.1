@@ -1,0 +1,70 @@
+.TH MMW 
+.SH NAME
+mmw \-report memory usage information
+.SH SYNOPSIS
+.B mmw [polls] [interval]
+
+.B mmw [option]
+
+
+.SH DESCRIPTION
+The
+.B mmw
+command reports back the following information n times (specified by
+polls) n seconds apart (specified by interval):
+
+.B total
+Total user memory available
+
+.B free
+Current free user memory
+
+.B shared
+Total shared memory in use
+
+.B buffer
+Total buffered memory
+
+.B cached
+Total cached memory
+
+If swap is also being shown
+
+.B swap
+Swap Total
+
+.B sfree
+Swap that is free
+
+.SH OPTIONS
+
+The 
+.B mmw
+command has the following options and args:
+
+.B -h --human
+Print data out in human readable format
+
+.B -i --interval NUMBER
+Specify the interval between polls
+
+.B -p --poll NUMBER
+Specify the number of polls
+
+.B -s --swap
+Print data about swap
+
+.B -v
+prints out the version
+
+.B -u
+a mini help facility
+
+.SH NOTES
+.I /proc
+filesystem must be mounted for the
+.B mmw
+command to work.
+
+.SH AUTHOR
+Jason R Fink 

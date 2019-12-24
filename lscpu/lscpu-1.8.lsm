@@ -1,0 +1,17 @@
+Begin3
+Title:          lscpu
+Version:        1.8        
+Entered-date:   20000810
+Entered-date:   20050118
+Entered-date:   20060608
+Description:    The lscpu utility retrieves information about
+                the system processors and Real Time Clock(RTC).
+Keywords:       processors, cpuinfo, rtc, real time clock
+Author:         Jason R. Fink <jay.fink@gmail.com>
+Maintained-by:  Jason R. Fink <jay.fink@gmail.com>
+Primary-site:   http://systhread.net/coding/
+Alternate-site: ibiblio.org /pub/Linux/utils 
+Original-site:  http://systhread.net/coding/
+Platforms:      x86 Linux
+Copying-policy: GPL
+End

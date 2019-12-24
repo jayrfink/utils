@@ -1,0 +1,14 @@
+Begin3
+Title:		mmw
+Version:	2.0
+Entered-date:	20100208
+Description:	An easy to use memory monitoring tool
+Keywords:	memory status
+Author:		Jason R. Fink <pantos.sys@gmail.com>
+Maintained-by:	Jason R. Fink <pantos.sys@gmail.com>
+Primary-site:	http://systhread.net/coding/
+Alternate-site:	ftp://ibiblio.org/pub/Linux/system/status/
+Original-site:  http://systhread.net/coding/
+Platforms:	Linux x86
+Copying-policy:	GPL
+End

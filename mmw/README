@@ -1,0 +1,15 @@
+README File for mmw
+-------------------
+
+The mmw utiltity reports memory information at a number of
+intervals and seconds apart specified by the user. It is designed 
+to be used with little or no thought to options and it is an
+extraordinarily small executable.
+
+
+SEE ALSO:
+	INSTALL     installation notes
+	AUTHORS     information about the authors
+	ChangeLog   changes between versions
+	COPYING     the license file for mmw
+

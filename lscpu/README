@@ -1,0 +1,13 @@
+README File for lscpu program
+-----------------------------
+lscpu simply scans select information about the processor from /proc/cpuinfo and the Real Time Clock (the location varies from kernel to kernel).
+
+see also:
+	INSTALL    for installation
+	NEWS       news
+	AUTHORS    Author contact information
+	CREDITS    People who helped out
+	Changelog  Changes between versions
+	COPYING    GNU/GPL
+
+

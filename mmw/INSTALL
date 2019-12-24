@@ -1,0 +1,19 @@
+
+INSTALL File for mmw program
+
+Once untarred, cd into the dist directory and do make, make install
+like so:
+
+	'cd mmw-X.X/'
+	'./configure'
+	'make'
+
+become root and:
+
+	'make install'
+
+note: running make install will put the binary form of mmw
+      into /usr/local/bin and the man page into /usr/local/man/man1
+      your local man directory *may_be_different*
+
+

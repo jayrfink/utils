@@ -1,0 +1,32 @@
+# Makefile to build lscpu
+VERSION = 1.7
+CC = gcc
+BINDIR = /usr/local/bin
+MANDIR = /usr/local/man/man1
+CFLAGS = -O2 -Wall -pedantic -Wstrict-prototypes -fno-strength-reduce
+PROG   = lscpu
+
+all: lscpu
+
+objs = lscpu.c
+
+lscpu: $(objs)
+	$(CC) -o $@ $(CFLAGS) $(objs)
+
+clean:
+	rm -f $(PROG) config.cache config.log config.status
+
+install: lscpu
+	cp $(PROG) $(BINDIR)/$(PROG)
+	cp lscpu.1 $(MANDIR)/lscpu.1
+
+uninstall: 
+	rm -f $(PROG) $(BINDIR)/$(PROG)
+	rm -f $(MANDIR)/lscpu.1
+	rm -f $(PROG) config.cache config.log config.status
+
+dist:
+	cd .. && (tar -cvf - $(PROG)-$(VERSION) | gzip -v9 > $(PROG)-$(VERSION).tar.gz)
+
+
+
